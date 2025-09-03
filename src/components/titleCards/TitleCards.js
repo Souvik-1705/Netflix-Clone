@@ -11,7 +11,7 @@ function TitleCards({ title, category }) {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzODhkYzA4Mzk5MmI4NjY4ODkwODVjNmE2ODg4NDI5ZiIsIm5iZiI6MTc0NjY0MDY3Ni44OTkwMDAyLCJzdWIiOiI2ODFiOWYyNGMxYTNlMmJkZTdlNjY3MzMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.6qkczX2LwPIpsqo5s8FtPFkMb1VBY0RS_s0euO1jk1k'
+      Authorization: `Bearer ${process.env.REACT_APP_TMDB_KEY}`,
     }
   };
 
